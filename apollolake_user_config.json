@@ -1,0 +1,13 @@
+{
+    "extra_cmdline": {
+        "pid": "0x325D",
+        "vid": "0x6310",
+        "sn": "B3J4N01003",
+        "netif_num": "2",
+        "mac1": "00e0665d5cb8"，
+        "mac2": "00e0665d5a9b"
+    },
+    "synoinfo": {},
+    "ramdisk_copy": {},
+    "extensions": []
+}
