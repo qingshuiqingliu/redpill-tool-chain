@@ -1,4 +1,4 @@
-name: 测试构建加bcm驱动2
+name: 测试构建加bcm驱动3
 
 on: [push]
 
@@ -10,6 +10,12 @@ jobs:
       fail-fast: false
       matrix:
        include:
+         - platform: bromolow
+           version: 6.2.4-25556
+         - platform: bromolow
+           version: 7.0-41222
+         - platform: bromolow
+           version: 7.0.1-42218
          - platform: apollolake
            version: 7.0.1-42218
     steps:
@@ -28,6 +34,8 @@ jobs:
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/mpt2sas/rpext-index.json
           ./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/rpext-index.json
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/bnx2x/rpext-index.json
+          ./redpill_tool_chain.sh add ttps://raw.githubusercontent.com/pocopico/rp-ext/master/bnx2/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/tg3/rpext-index.json
 
       - name: 编译引导镜像
         run: ./redpill_tool_chain.sh auto ${{matrix.platform}}-${{matrix.version}}
