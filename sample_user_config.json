@@ -5,7 +5,9 @@
         "sn": "B3J4N01003",
         "netif_num": "2",
         "mac1": "00e0665d5cb8",
-        "mac2": "00e0665d5a9b"
+        "mac2": "00e0665d5a9b",
+        "SataPortMap": "6",
+        "DiskIdxMap": "00"
     },
     "synoinfo": {},
     "ramdisk_copy": {},
