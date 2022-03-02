@@ -1,7 +1,7 @@
 {
     "extra_cmdline": {
-        "pid": "0x325D",
-        "vid": "0x6310",
+        "pid": "0x1234",
+        "vid": "0xABCD",
         "sn": "B3J4N01003",
         "netif_num": "2",
         "mac1": "00e0665d5cb8"，
