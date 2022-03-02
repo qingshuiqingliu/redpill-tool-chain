@@ -1,4 +1,4 @@
-name: 测试构建加bcm，rtl驱动
+name: 测试构建加bcm，rtl8168驱动
 
 on: [push]
 
